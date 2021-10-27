@@ -6,7 +6,7 @@ describe("Challengers", () => {
       "https://br1.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5",
       {
         headers: {
-          "X-Riot-Token": "RGAPI-5289ff1b-0b99-475b-a1a5-349fb72cf7a2",
+          "X-Riot-Token": "RGAPI-22577178-0d27-42b0-8f9b-2de2f3fcffe4",
         },
       }
     );
@@ -18,7 +18,7 @@ describe("Challengers", () => {
       "https://br1.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5",
       {
         headers: {
-          "X-Riot-Token": "RGAPI-5289ff1b-0b99-475b-a1a5-349fb72cf7a2",
+          "X-Riot-Token": "RGAPI-22577178-0d27-42b0-8f9b-2de2f3fcffe4",
         },
       }
     );
@@ -30,7 +30,7 @@ describe("Challengers", () => {
         "https://br1.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5",
         {
           headers: {
-            "X-Riot-Token": "RGAPI-5289ff1b-0b99-475b-a1a5-349fb72cf7a2",
+            "X-Riot-Token": "RGAPI-22577178-0d27-42b0-8f9b-2de2f3fcffe4",
           },
         }
       );
@@ -38,7 +38,5 @@ describe("Challengers", () => {
       console.log(data.entries[i].summonerName);
       }
       expect(data.entries.length).toBe(200)
-      expect(data.entries.length).toBeLessThan(201)
-      expect(data.entries.length).toBeGreaterThan(199)
   })
  })
