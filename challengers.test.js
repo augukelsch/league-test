@@ -38,5 +38,33 @@ describe("Challengers", () => {
       console.log(data.entries[i].summonerName);
       }
       expect(data.entries.length).toBe(200)
-  })
+      })
+
+  it("should return summoner data by simmilar name", async () => {
+    const teste = "psiduck"
+    const { data } = await axios.get(
+      `https://br1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${teste}`,
+      {
+        headers: {
+          "X-Riot-Token": "RGAPI-22577178-0d27-42b0-8f9b-2de2f3fcffe4",
+        },
+      }
+
+    );
+    expect(data.name).toBe("Psi Duck");
+ 
+  });
+  it("should return summoner data by name", async () => {
+    const teste = "Psi Duck"
+    const { data } = await axios.get(
+      `https://br1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${teste}`,
+      {
+        headers: {
+          "X-Riot-Token": "RGAPI-22577178-0d27-42b0-8f9b-2de2f3fcffe4",
+        },
+      }
+
+    );
+    expect(data.name).toBe("Psi Duck");
+   });
  })
