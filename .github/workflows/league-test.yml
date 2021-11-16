@@ -4,8 +4,6 @@
 name: league-test
 
 on:
-  schedule:
-  - cron: "0 19 * * *"
   push:
     branches: [ main ]
   pull_request:
